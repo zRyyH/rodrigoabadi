@@ -6,7 +6,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 app.post('/upload', upload.single('file'), (req, res) => {
     if (!req.file) {
-        return res.status(400).json({ error: 'Nenhum arquivo enviadoo' });
+        return res.status(400).json({ error: 'Nenhum arquivo enviado' });
     }
     res.json({
         filename: req.file.originalname,
