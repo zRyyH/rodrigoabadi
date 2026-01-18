@@ -1,12 +1,12 @@
 {
-    "name": "file-upload-api",
-    "version": "1.0.0",
-    "main": "index.js",
+    "name": "rodrigoabadi",
+    "type": "module",
     "scripts": {
-        "start": "node index.js"
+        "start": "node server.js",
+        "dev": "node --watch server.js"
     },
     "dependencies": {
-        "express": "^4.18.2",
-        "multer": "^1.4.5-lts.1"
+        "dotenv": "17.2.3",
+        "express": "5.1.0"
     }
 }
