@@ -1,4 +1,4 @@
-import config from '../config.js';
+import config from '../config/index.js';
 
 export async function verifyToken(token) {
     const { url, collection } = config.pocketbase;
