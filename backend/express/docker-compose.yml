@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    environment:
+      - POCKETBASE_URL=${POCKETBASE_URL}
+      - COLLECTION=${COLLECTION}
+      - PORT=${PORT}
+    ports:
+      - "5000:5000"
