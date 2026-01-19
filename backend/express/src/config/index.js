@@ -1,7 +1,9 @@
 export default {
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 5000,
     pocketbase: {
+        email: process.env.POCKETBASE_EMAIL,
+        password: process.env.POCKETBASE_PASSWORD,
         url: process.env.POCKETBASE_URL || 'http://127.0.0.1:8090',
         collection: process.env.COLLECTION || 'users'
     }
-};
+}

@@ -1,7 +1,9 @@
 services:
   api:
-    build: .
+    image: zryyh/rodrigoabadiexpress:latest
     environment:
+      - POCKETBASE_EMAIL=${POCKETBASE_EMAIL}
+      - POCKETBASE_PASSWORD=${POCKETBASE_PASSWORD}
       - POCKETBASE_URL=${POCKETBASE_URL}
       - COLLECTION=${COLLECTION}
       - PORT=${PORT}
